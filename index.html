@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>treine.me</title>
+
+    <link rel="preconnect" href="">
+    <link rel="preconnect" href="" crossorigin>
+    <link href="" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff; 
+            color: #1e1e1e; 
+            line-height: 1.7;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .wrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            max-width: max;
+            margin: 0 auto;
+            padding: 0 30px;
+            width: 100%;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 70px 110px;
+            font-weight: 500;
+        }
+
+        .logo a {
+            font-size: 1.8rem;
+            font-weight: 700;
+            text-decoration: none;
+            color: #b2bcce;
+            letter-spacing: -0.5px;
+            transition: all 0.5s;
+        }
+
+        .logo a:hover {
+            font-size: 1.8rem;
+            font-weight: 700;
+            text-decoration: none;
+            color: #2e3033;
+            letter-spacing: -0.5px;
+
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #2d2d2d;
+            font-size: 1rem;
+            transition: color 0.2s;
+            font-weight: 400;
+        }
+
+        .nav-links a:hover {
+            color: #000000;
+        }
+
+
+        .main-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex: 1;
+            gap: 60px;
+            padding: 40px 0 20px;
+        }
+
+
+        .text-section {
+            flex: 1;
+            max-width: 700px;
+            margin-left: 110px;
+        }
+
+        .text-section h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            line-height: 1.5;
+            letter-spacing: 0px;
+            color: #000;
+            margin-bottom: 25px;
+            
+        }
+
+
+        .text-section h1 span {
+            background: #b2bcce;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text; 
+        }
+
+        .description {
+            font-size: 1.2rem;
+            color: #4a4a4a;
+            margin-bottom: 40px;
+            max-width: 550px;
+        }
+
+        .btn-start {
+            display: inline-block;
+            background-color: #b8b796;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 23px 70px;
+            border-radius: 10px;
+            letter-spacing: 0.3px;
+            transition: all 0.5s;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .btn-start:hover {
+            opacity: 75%;
+            color: #000000;
+            border-color: #000;
+
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+
+
+        .image-section {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .image-placeholder {
+            width: 100%;
+            max-width: 450px;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+   
+        
+        .footer-message {
+            text-align: center;
+            padding: 30px 0 30px;
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+            font-size: 1rem;
+            color: #6f6f6f;
+            font-weight: 400;
+            letter-spacing: 0.2px;
+        }
+
+        .footer-message a {
+            color: #1e1e1e;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px dotted #b0b0b0;
+        }
+
+        .footer-message a:hover {
+            border-bottom: 1px solid #1e1e1e;
+        }
+
+
+        @media (max-width: 1000px) {
+            .main-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 30px;
+            }
+
+            .text-section {
+                max-width: 100%;
+            }
+
+            .description {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .image-section {
+                justify-content: center;
+            }
+
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .nav-links {
+                gap: 30px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .text-section h1 {
+                font-size: 3rem;
+            }
+
+            .nav-links {
+                gap: 20px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="#">treine.me</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Training</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <div class="text-section">
+                <h1>
+
+                    <p style="font-weight: 100;">WORKOUTS MADE 
+                    <span>EXCLUSIVE</span> FOR YOU!</p>
+
+                </h1>
+                <p class="description">
+                    We create <strong>exclusive and unique workouts</strong> for you.<br>
+                    Invest in your body and <strong>get much more performance</strong><br>
+                    and quality of life.
+                </p>
+                <a href="#" class="btn-start" id="startNowBtn">
+                    
+                    
+                    
+                    <p style="font-weight: 100;" >
+                        <div style="text-align: center; margin-left: -105px;">
+                            <img src="logowatsapp.png" width="35" top="30">
+                        </div>
+
+                        <div style="text-align: center; margin-left: 25px; margin-top: -35px;">
+                             Start now 
+                        </div>
+                    </p></a>
+            </div>
+            <div class="image-section;" >
+                <div class="image-placeholder" >
+                   <img src="sport.png" style="margin-right: 250px" >
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+
+    <footer class="footer-message">
+        send us a message <a href="#" id="messageLink">@treine.me</a>
+    </footer>
+
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const startBtn = document.getElementById('startNowBtn');
+            const messageLink = document.getElementById('messageLink');
+
+            function handleAction(event, msg) {
+                event.preventDefault();
+                alert(msg);
+            }
+
+            if (startBtn) {
+                startBtn.addEventListener('click', function(event) {
+                    handleAction(event, 'Нажали Start now, дальше пока ничего нет.');
+                });
+            }
+
+            if (messageLink) {
+                messageLink.addEventListener('click', function(event) {
+                    handleAction(event, ' Сообщение');
+                });
+            }
+
+            const imageBox = document.querySelector('.image-placeholder');
+            if (imageBox) {
+                imageBox.addEventListener('mouseenter', () => {
+                    imageBox.style.transition = 'opacity 0.3s';
+                    imageBox.style.opacity = '0.8';
+                });
+                imageBox.addEventListener('mouseleave', () => {
+                    imageBox.style.opacity = '1';
+                });
+            }
+        });
+    </script>
+</body>
+</html>
